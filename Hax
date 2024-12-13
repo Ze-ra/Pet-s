@@ -1,0 +1,66 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("TITLE", "DarkTheme")
+local Tab = Window:NewTab("Auto")
+local Section = Tab:NewSection("auto")
+Section:NewButton("Mediaval Box", "ButtonInfo", function()
+while wait (0) do
+local args = {
+    [1] = "Medieval_Box"
+}
+
+game:GetService("ReplicatedStorage").Remotes.Boxes.RequestBoxUnlock:InvokeServer(unpack(args))
+end
+    print("Clicked")
+end)
+Section:NewButton("Autumn", "ButtonInfo", function()
+while wait (0) do
+local args = {
+    [1] = "Autumn_Box"
+}
+
+game:GetService("ReplicatedStorage").Remotes.Boxes.RequestBoxUnlock:InvokeServer(unpack(args))
+end
+    print("Clicked")
+end)
+Section:NewButton("Autumn Hat", "ButtonInfo", function()
+while wait (0) do
+local args = {
+    [1] = "Autumn_Hat_Box"
+}
+
+game:GetService("ReplicatedStorage").Remotes.Boxes.RequestBoxUnlock:InvokeServer(unpack(args))
+end
+    print("Clicked")
+end)
+Section:NewButton("Australia", "ButtonInfo", function()
+while wait (0) do
+local args = {
+    [1] = "Australia_Box"
+}
+
+game:GetService("ReplicatedStorage").Remotes.Boxes.RequestBoxUnlock:InvokeServer(unpack(args))
+end
+    print("Clicked")
+end)
+local Tab = Window:NewTab("Auto 2")
+local Section = Tab:NewSection("Boxes")
+Section:NewButton("Sand", "ButtonInfo", function()
+while wait (0) do
+local args = {
+    [1] = "Sand_Box"
+}
+
+game:GetService("ReplicatedStorage").Remotes.Boxes.RequestBoxUnlock:InvokeServer(unpack(args))
+end
+    print("Clicked")
+end)
+Section:NewButton("Sand Hat", "ButtonInfo", function()
+while wait (0) do
+local args = {
+    [1] = "Sand_Hat_Box"
+}
+
+game:GetService("ReplicatedStorage").Remotes.Boxes.RequestBoxUnlock:InvokeServer(unpack(args))
+end
+    print("Clicked")
+end)
